@@ -1,0 +1,10 @@
+^E:\21107\DESKTOP\DESKPET\CMAKELISTS.TXT
+setlocal
+"C:\VisualStudio\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/21107/Desktop/deskpet -BE:/21107/Desktop/deskpet/build --check-stamp-file E:/21107/Desktop/deskpet/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

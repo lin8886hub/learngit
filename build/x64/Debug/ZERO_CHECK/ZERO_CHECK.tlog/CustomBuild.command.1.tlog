@@ -1,0 +1,10 @@
+^E:\21107\DESKTOP\DESKPET\BUILD\CMAKEFILES\0B46CB99EBF861377D3FD36B85372EF6\GENERATE.STAMP.RULE
+setlocal
+"C:\VisualStudio\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/21107/Desktop/deskpet -BE:/21107/Desktop/deskpet/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/21107/Desktop/deskpet/build/deskpet.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
