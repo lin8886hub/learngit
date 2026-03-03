@@ -89,8 +89,8 @@ void Pet::render(SDL_Renderer *renderer)
    SDL_Rect dstFrame;
    dstFrame.x = (int)position.x;
    dstFrame.y = (int)position.y;
-   dstFrame.w = srcFrame.w;
-   dstFrame.h = srcFrame.h;
+   dstFrame.w = srcFrame.w*4;
+   dstFrame.h = srcFrame.h*4;
 
    SDL_RenderCopy(renderer, currentanimation->getTexture(), &srcFrame, &dstFrame);
 }
